@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="manual"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="MakeFileProj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory=".\Release"
+			IntermediateDirectory=".\Release"
+			ConfigurationType="0"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="latex manual.tex"
+				ReBuildCommandLine="latex manual.tex "
+				Output="manual.dvi"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="LaTeX Files"
+			Filter="*.tex">
+			<File
+				RelativePath="eleclua.tex">
+			</File>
+			<File
+				RelativePath="magnlua.tex">
+			</File>
+			<File
+				RelativePath="manual.tex">
+			</File>
+			<File
+				RelativePath="mathematica.tex">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
