@@ -837,11 +837,11 @@ BOOL CFemmeDocCore::LoadMesh()
 			msg+="button to highlight the problem regions.";
 			AfxMessageBox(msg);
 			fclose(fp);
-			sprintf(infile,"%s.ele",PathName);	DeleteFile(infile);
-			sprintf(infile,"%s.node",PathName);	DeleteFile(infile);
-			sprintf(infile,"%s.pbc",PathName);	DeleteFile(infile);
-			sprintf(infile,"%s.poly",PathName);	DeleteFile(infile);
-			sprintf(infile,"%s.edge",PathName);	DeleteFile(infile);
+			sprintf(infile,"%s.ele",PathName);	//DeleteFile(infile);
+			sprintf(infile,"%s.node",PathName);	//DeleteFile(infile);
+			sprintf(infile,"%s.pbc",PathName);	//DeleteFile(infile);
+			sprintf(infile,"%s.poly",PathName);	//DeleteFile(infile);
+			sprintf(infile,"%s.edge",PathName);	//DeleteFile(infile);
 			exit(1);
 		}
 		// look up block type out of the list of block labels
@@ -937,10 +937,10 @@ BOOL CFemmeDocCore::LoadMesh()
 	free(mbr);
 
 	// clear out temporary files
-	sprintf(infile,"%s.ele",PathName);	DeleteFile(infile);
-	sprintf(infile,"%s.node",PathName);	DeleteFile(infile);
-	sprintf(infile,"%s.pbc",PathName);	DeleteFile(infile);
-	sprintf(infile,"%s.poly",PathName);	DeleteFile(infile);
+	sprintf(infile,"%s.ele",PathName);	//DeleteFile(infile);
+	sprintf(infile,"%s.node",PathName);	//DeleteFile(infile);
+	sprintf(infile,"%s.pbc",PathName);	//DeleteFile(infile);
+	sprintf(infile,"%s.poly",PathName);	//DeleteFile(infile);
 
 	return TRUE;
 }

@@ -72,7 +72,7 @@ void CBigLinProb::Put(double v, int p, int q)
 	CEntry *e,*l;
 	int i;
 
-	if(q<p){ i=p; p=q; q=i; }
+	if(q<p){ i=p; p=q; q=i; }//exchange
 
 	e=M[p];
 
@@ -82,19 +82,19 @@ void CBigLinProb::Put(double v, int p, int q)
 		e=e->next;
 	}
 
-	if(e->c == q){
+	if(e->c == q){//exist the q, fresh it
 		e->x=v;
 		return;
 	}
 
-	CEntry *m = new CEntry;
+	CEntry *m = new CEntry;//it is new...
 	
-	if((e->next == NULL) && (q > e->c)){
+	if((e->next == NULL) && (q > e->c)){//q it out the index of the end
 		e->next = m;
 		m->c = q;
 		m->x = v;
 	}
-	else{
+	else{//the q doesn't exist, intsert the q.
 		l->next=m;
 		m->next=e;
 		m->c=q;
@@ -107,11 +107,11 @@ double CBigLinProb::Get(int p, int q)
 {
 	CEntry *e;
 
-	if(q<p){ int i; i=p; p=q; q=i; }
+	if(q<p){ int i; i=p; p=q; q=i; }//it is symmetric, fint the smaller index to save time.
 
-	e=M[p];
+	e=M[p];//the pointer
 
-	while((e->c < q) && (e->next != NULL)) e=e->next;
+	while((e->c < q) && (e->next != NULL)) e=e->next;//iterative, because it is sparse, so it's fast.
 
 	if(e->c == q) return e->x;
 	
@@ -193,7 +193,7 @@ int CBigLinProb::PCGSolve(int flag)
 	double er,del,rho,pAp;
 
 	// quick check for most obvious sign of singularity;
-	for(i=0;i<n;i++) if(M[i]->x==0){
+	for(i=0;i<n;i++) if(M[i]->x==0){//if the first is zero, then not correct, because no zeros
 		fprintf(stderr,"singular flag tripped.");
 		return 0;
 	}

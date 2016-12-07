@@ -121,7 +121,7 @@ BOOL CFemmeDocCore::Cuthill()
 		ocon[n1][nxtnum[n1]]=n0; nxtnum[n1]++;
 	}
 	fclose(fp);
-	DeleteFile(infile);
+	//DeleteFile(infile);
 
 	// sort connections in order of increasing connectivity;
 	// I'm lazy, so I'm doing a bubble sort;

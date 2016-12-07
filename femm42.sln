@@ -1,0 +1,139 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ResizableLib", "ResizableLib\ResizableLib.vcxproj", "{AE54FD39-18EF-471C-A127-130DFBE3E513}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "belasolv", "belasolv\belasolv.vcxproj", "{DD0C12E8-C61F-4972-83A1-10B55B52E65E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "csolv", "csolv\CSOLV.vcxproj", "{2D8E6147-D463-4E99-AF49-76410E8B7B51}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "femm", "femm\femm.vcxproj", "{7E1A9D9A-4E2B-4453-9436-7404D036DAF8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "femmplot", "femmplot\femmplot.vcxproj", "{999E2D0E-28BB-420B-9AF9-F3128CFEDE5B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fkn", "fkn\fkn.vcxproj", "{37604286-C94C-4CBA-9DEB-D0F0D4CA7DDF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hsolv", "hsolv\HSOLV.vcxproj", "{BC9A3931-EC9C-4820-8258-95E6D3DF38EB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "liblua", "liblua\liblua.vcxproj", "{AB305C6B-E63D-443C-AB58-76E6ACA724A7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "manual", "manual\manual.vcxproj", "{CCCF97C4-1C2A-43E3-80BA-0C3B14F88261}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wintriangle", "wintriangle\wintriangle.vcxproj", "{4EA86DC1-A07F-4CF9-AEA3-7759E9CCD0BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug with Mathematica|Win32 = Debug with Mathematica|Win32
+		Debug|Win32 = Debug|Win32
+		Release with Mathematica|Win32 = Release with Mathematica|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE54FD39-18EF-471C-A127-130DFBE3E513}.Debug with Mathematica|Win32.ActiveCfg = Debug|Win32
+		{AE54FD39-18EF-471C-A127-130DFBE3E513}.Debug with Mathematica|Win32.Build.0 = Debug|Win32
+		{AE54FD39-18EF-471C-A127-130DFBE3E513}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AE54FD39-18EF-471C-A127-130DFBE3E513}.Debug|Win32.Build.0 = Debug|Win32
+		{AE54FD39-18EF-471C-A127-130DFBE3E513}.Release with Mathematica|Win32.ActiveCfg = Release|Win32
+		{AE54FD39-18EF-471C-A127-130DFBE3E513}.Release with Mathematica|Win32.Build.0 = Release|Win32
+		{AE54FD39-18EF-471C-A127-130DFBE3E513}.Release|Win32.ActiveCfg = Release|Win32
+		{AE54FD39-18EF-471C-A127-130DFBE3E513}.Release|Win32.Build.0 = Release|Win32
+		{AE54FD39-18EF-471C-A127-130DFBE3E513}.Template|Win32.ActiveCfg = Release|Win32
+		{AE54FD39-18EF-471C-A127-130DFBE3E513}.Template|Win32.Build.0 = Release|Win32
+		{DD0C12E8-C61F-4972-83A1-10B55B52E65E}.Debug with Mathematica|Win32.ActiveCfg = Debug|Win32
+		{DD0C12E8-C61F-4972-83A1-10B55B52E65E}.Debug with Mathematica|Win32.Build.0 = Debug|Win32
+		{DD0C12E8-C61F-4972-83A1-10B55B52E65E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD0C12E8-C61F-4972-83A1-10B55B52E65E}.Debug|Win32.Build.0 = Debug|Win32
+		{DD0C12E8-C61F-4972-83A1-10B55B52E65E}.Release with Mathematica|Win32.ActiveCfg = Release|Win32
+		{DD0C12E8-C61F-4972-83A1-10B55B52E65E}.Release with Mathematica|Win32.Build.0 = Release|Win32
+		{DD0C12E8-C61F-4972-83A1-10B55B52E65E}.Release|Win32.ActiveCfg = Release|Win32
+		{DD0C12E8-C61F-4972-83A1-10B55B52E65E}.Release|Win32.Build.0 = Release|Win32
+		{DD0C12E8-C61F-4972-83A1-10B55B52E65E}.Template|Win32.ActiveCfg = Template|Win32
+		{DD0C12E8-C61F-4972-83A1-10B55B52E65E}.Template|Win32.Build.0 = Template|Win32
+		{2D8E6147-D463-4E99-AF49-76410E8B7B51}.Debug with Mathematica|Win32.ActiveCfg = Debug|Win32
+		{2D8E6147-D463-4E99-AF49-76410E8B7B51}.Debug with Mathematica|Win32.Build.0 = Debug|Win32
+		{2D8E6147-D463-4E99-AF49-76410E8B7B51}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2D8E6147-D463-4E99-AF49-76410E8B7B51}.Debug|Win32.Build.0 = Debug|Win32
+		{2D8E6147-D463-4E99-AF49-76410E8B7B51}.Release with Mathematica|Win32.ActiveCfg = Release|Win32
+		{2D8E6147-D463-4E99-AF49-76410E8B7B51}.Release with Mathematica|Win32.Build.0 = Release|Win32
+		{2D8E6147-D463-4E99-AF49-76410E8B7B51}.Release|Win32.ActiveCfg = Release|Win32
+		{2D8E6147-D463-4E99-AF49-76410E8B7B51}.Release|Win32.Build.0 = Release|Win32
+		{2D8E6147-D463-4E99-AF49-76410E8B7B51}.Template|Win32.ActiveCfg = Template|Win32
+		{2D8E6147-D463-4E99-AF49-76410E8B7B51}.Template|Win32.Build.0 = Template|Win32
+		{7E1A9D9A-4E2B-4453-9436-7404D036DAF8}.Debug with Mathematica|Win32.ActiveCfg = Debug with Mathematica|Win32
+		{7E1A9D9A-4E2B-4453-9436-7404D036DAF8}.Debug with Mathematica|Win32.Build.0 = Debug with Mathematica|Win32
+		{7E1A9D9A-4E2B-4453-9436-7404D036DAF8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7E1A9D9A-4E2B-4453-9436-7404D036DAF8}.Debug|Win32.Build.0 = Debug|Win32
+		{7E1A9D9A-4E2B-4453-9436-7404D036DAF8}.Release with Mathematica|Win32.ActiveCfg = Release with Mathematica|Win32
+		{7E1A9D9A-4E2B-4453-9436-7404D036DAF8}.Release with Mathematica|Win32.Build.0 = Release with Mathematica|Win32
+		{7E1A9D9A-4E2B-4453-9436-7404D036DAF8}.Release|Win32.ActiveCfg = Release|Win32
+		{7E1A9D9A-4E2B-4453-9436-7404D036DAF8}.Release|Win32.Build.0 = Release|Win32
+		{7E1A9D9A-4E2B-4453-9436-7404D036DAF8}.Template|Win32.ActiveCfg = Template|Win32
+		{7E1A9D9A-4E2B-4453-9436-7404D036DAF8}.Template|Win32.Build.0 = Template|Win32
+		{999E2D0E-28BB-420B-9AF9-F3128CFEDE5B}.Debug with Mathematica|Win32.ActiveCfg = Debug|Win32
+		{999E2D0E-28BB-420B-9AF9-F3128CFEDE5B}.Debug with Mathematica|Win32.Build.0 = Debug|Win32
+		{999E2D0E-28BB-420B-9AF9-F3128CFEDE5B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{999E2D0E-28BB-420B-9AF9-F3128CFEDE5B}.Debug|Win32.Build.0 = Debug|Win32
+		{999E2D0E-28BB-420B-9AF9-F3128CFEDE5B}.Release with Mathematica|Win32.ActiveCfg = Release|Win32
+		{999E2D0E-28BB-420B-9AF9-F3128CFEDE5B}.Release with Mathematica|Win32.Build.0 = Release|Win32
+		{999E2D0E-28BB-420B-9AF9-F3128CFEDE5B}.Release|Win32.ActiveCfg = Release|Win32
+		{999E2D0E-28BB-420B-9AF9-F3128CFEDE5B}.Release|Win32.Build.0 = Release|Win32
+		{999E2D0E-28BB-420B-9AF9-F3128CFEDE5B}.Template|Win32.ActiveCfg = Template|Win32
+		{999E2D0E-28BB-420B-9AF9-F3128CFEDE5B}.Template|Win32.Build.0 = Template|Win32
+		{37604286-C94C-4CBA-9DEB-D0F0D4CA7DDF}.Debug with Mathematica|Win32.ActiveCfg = Debug|Win32
+		{37604286-C94C-4CBA-9DEB-D0F0D4CA7DDF}.Debug with Mathematica|Win32.Build.0 = Debug|Win32
+		{37604286-C94C-4CBA-9DEB-D0F0D4CA7DDF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{37604286-C94C-4CBA-9DEB-D0F0D4CA7DDF}.Debug|Win32.Build.0 = Debug|Win32
+		{37604286-C94C-4CBA-9DEB-D0F0D4CA7DDF}.Release with Mathematica|Win32.ActiveCfg = Release|Win32
+		{37604286-C94C-4CBA-9DEB-D0F0D4CA7DDF}.Release with Mathematica|Win32.Build.0 = Release|Win32
+		{37604286-C94C-4CBA-9DEB-D0F0D4CA7DDF}.Release|Win32.ActiveCfg = Release|Win32
+		{37604286-C94C-4CBA-9DEB-D0F0D4CA7DDF}.Release|Win32.Build.0 = Release|Win32
+		{37604286-C94C-4CBA-9DEB-D0F0D4CA7DDF}.Template|Win32.ActiveCfg = Template|Win32
+		{37604286-C94C-4CBA-9DEB-D0F0D4CA7DDF}.Template|Win32.Build.0 = Template|Win32
+		{BC9A3931-EC9C-4820-8258-95E6D3DF38EB}.Debug with Mathematica|Win32.ActiveCfg = Debug|Win32
+		{BC9A3931-EC9C-4820-8258-95E6D3DF38EB}.Debug with Mathematica|Win32.Build.0 = Debug|Win32
+		{BC9A3931-EC9C-4820-8258-95E6D3DF38EB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC9A3931-EC9C-4820-8258-95E6D3DF38EB}.Debug|Win32.Build.0 = Debug|Win32
+		{BC9A3931-EC9C-4820-8258-95E6D3DF38EB}.Release with Mathematica|Win32.ActiveCfg = Release|Win32
+		{BC9A3931-EC9C-4820-8258-95E6D3DF38EB}.Release with Mathematica|Win32.Build.0 = Release|Win32
+		{BC9A3931-EC9C-4820-8258-95E6D3DF38EB}.Release|Win32.ActiveCfg = Release|Win32
+		{BC9A3931-EC9C-4820-8258-95E6D3DF38EB}.Release|Win32.Build.0 = Release|Win32
+		{BC9A3931-EC9C-4820-8258-95E6D3DF38EB}.Template|Win32.ActiveCfg = Template|Win32
+		{BC9A3931-EC9C-4820-8258-95E6D3DF38EB}.Template|Win32.Build.0 = Template|Win32
+		{AB305C6B-E63D-443C-AB58-76E6ACA724A7}.Debug with Mathematica|Win32.ActiveCfg = Debug|Win32
+		{AB305C6B-E63D-443C-AB58-76E6ACA724A7}.Debug with Mathematica|Win32.Build.0 = Debug|Win32
+		{AB305C6B-E63D-443C-AB58-76E6ACA724A7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AB305C6B-E63D-443C-AB58-76E6ACA724A7}.Debug|Win32.Build.0 = Debug|Win32
+		{AB305C6B-E63D-443C-AB58-76E6ACA724A7}.Release with Mathematica|Win32.ActiveCfg = Release|Win32
+		{AB305C6B-E63D-443C-AB58-76E6ACA724A7}.Release with Mathematica|Win32.Build.0 = Release|Win32
+		{AB305C6B-E63D-443C-AB58-76E6ACA724A7}.Release|Win32.ActiveCfg = Release|Win32
+		{AB305C6B-E63D-443C-AB58-76E6ACA724A7}.Release|Win32.Build.0 = Release|Win32
+		{AB305C6B-E63D-443C-AB58-76E6ACA724A7}.Template|Win32.ActiveCfg = Template|Win32
+		{AB305C6B-E63D-443C-AB58-76E6ACA724A7}.Template|Win32.Build.0 = Template|Win32
+		{CCCF97C4-1C2A-43E3-80BA-0C3B14F88261}.Debug with Mathematica|Win32.ActiveCfg = Template|Win32
+		{CCCF97C4-1C2A-43E3-80BA-0C3B14F88261}.Debug with Mathematica|Win32.Build.0 = Template|Win32
+		{CCCF97C4-1C2A-43E3-80BA-0C3B14F88261}.Debug|Win32.ActiveCfg = Template|Win32
+		{CCCF97C4-1C2A-43E3-80BA-0C3B14F88261}.Debug|Win32.Build.0 = Template|Win32
+		{CCCF97C4-1C2A-43E3-80BA-0C3B14F88261}.Release with Mathematica|Win32.ActiveCfg = Release|Win32
+		{CCCF97C4-1C2A-43E3-80BA-0C3B14F88261}.Release with Mathematica|Win32.Build.0 = Release|Win32
+		{CCCF97C4-1C2A-43E3-80BA-0C3B14F88261}.Release|Win32.ActiveCfg = Release|Win32
+		{CCCF97C4-1C2A-43E3-80BA-0C3B14F88261}.Release|Win32.Build.0 = Release|Win32
+		{CCCF97C4-1C2A-43E3-80BA-0C3B14F88261}.Template|Win32.ActiveCfg = Template|Win32
+		{CCCF97C4-1C2A-43E3-80BA-0C3B14F88261}.Template|Win32.Build.0 = Template|Win32
+		{4EA86DC1-A07F-4CF9-AEA3-7759E9CCD0BD}.Debug with Mathematica|Win32.ActiveCfg = Debug|Win32
+		{4EA86DC1-A07F-4CF9-AEA3-7759E9CCD0BD}.Debug with Mathematica|Win32.Build.0 = Debug|Win32
+		{4EA86DC1-A07F-4CF9-AEA3-7759E9CCD0BD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4EA86DC1-A07F-4CF9-AEA3-7759E9CCD0BD}.Debug|Win32.Build.0 = Debug|Win32
+		{4EA86DC1-A07F-4CF9-AEA3-7759E9CCD0BD}.Release with Mathematica|Win32.ActiveCfg = Release|Win32
+		{4EA86DC1-A07F-4CF9-AEA3-7759E9CCD0BD}.Release with Mathematica|Win32.Build.0 = Release|Win32
+		{4EA86DC1-A07F-4CF9-AEA3-7759E9CCD0BD}.Release|Win32.ActiveCfg = Release|Win32
+		{4EA86DC1-A07F-4CF9-AEA3-7759E9CCD0BD}.Release|Win32.Build.0 = Release|Win32
+		{4EA86DC1-A07F-4CF9-AEA3-7759E9CCD0BD}.Template|Win32.ActiveCfg = Template|Win32
+		{4EA86DC1-A07F-4CF9-AEA3-7759E9CCD0BD}.Template|Win32.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

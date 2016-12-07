@@ -2156,11 +2156,11 @@ BOOL ChdrawDoc::LoadMesh()
 	fclose(fp);
 
 	// clear out temporary files
-	infile=rootname+".ele";		DeleteFile(infile);
-	infile=rootname+".node";	DeleteFile(infile);	
-	infile=rootname+".edge";	DeleteFile(infile);
-	infile=rootname+".pbc";		DeleteFile(infile);
-	infile=rootname+".poly";	DeleteFile(infile);
+	infile=rootname+".ele";		//DeleteFile(infile);
+	infile=rootname+".node";	//DeleteFile(infile);	
+	infile=rootname+".edge";	//DeleteFile(infile);
+	infile=rootname+".pbc";		//DeleteFile(infile);
+	infile=rootname+".poly";	//DeleteFile(infile);
 
 	return TRUE;
 }

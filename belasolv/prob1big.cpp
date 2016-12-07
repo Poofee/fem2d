@@ -15,6 +15,7 @@ BOOL CFemmeDocCore::AnalyzeProblem(CBigLinProb &L)
 {
 	int i,j,k,pctr=0;
 	double Me[3][3],be[3];		// element matrices;
+	double Mtest[3][2];
 	double l[3],p[3],q[3];		// element shape parameters;
 	int n[3],ne[3];				// numbers of nodes for a particular element;
 	double a,K,r,z,kludge;
@@ -68,7 +69,8 @@ BOOL CFemmeDocCore::AnalyzeProblem(CBigLinProb &L)
 		}		
 	}
 
-
+	int aa, bb,cc;
+	aa = 0; bb = 0; cc = 0;
 	// build element matrices using the matrices derived in Allaire's book.
 	for(i=0;i<NumEls;i++)
 	{
@@ -141,7 +143,8 @@ BOOL CFemmeDocCore::AnalyzeProblem(CBigLinProb &L)
 			be[j]+=K;
 		}
 
-
+		int dd;
+		dd = 0;
 		for(j=0;j<3;j++)
 		{
 			if (El->e[j] >= 0)
@@ -163,6 +166,8 @@ BOOL CFemmeDocCore::AnalyzeProblem(CBigLinProb &L)
 					K = 1000.*Depth*c*lineproplist[El->e[j]].c1*l[j]/2.;
 					be[j]+=K;
 					be[k]+=K;
+
+					dd = 1;
 				}
 			
 				// contribution to be[] from surface charge density;
@@ -171,10 +176,13 @@ BOOL CFemmeDocCore::AnalyzeProblem(CBigLinProb &L)
 					K =-1000.*Depth*c*lineproplist[El->e[j]].qs*l[j]/2.;
 					be[j]+=K;
 					be[k]+=K;
+
+					dd = 1;
 				}
 			}
 		}
-
+		int ff;
+		ff = 0;
 		// process any prescribed nodal values;
 		for(j=0;j<3;j++)
 		{
@@ -189,9 +197,16 @@ BOOL CFemmeDocCore::AnalyzeProblem(CBigLinProb &L)
 					}
 				}
 				be[j]=L.V[n[j]]*Me[j][j];
+				
+				ff = 1;
 			}
 		}
-
+		if (ff == 1 || dd == 1)
+		{
+			cc += 1;
+			ff = 0;
+			dd = 0;
+		}
 		// combine block matrices into global matrices;
 		for (j=0;j<3;j++)
 		{
@@ -199,6 +214,23 @@ BOOL CFemmeDocCore::AnalyzeProblem(CBigLinProb &L)
 			if(meshnode[n[j]].InConductor>=0)
 				if(circproplist[meshnode[n[j]].InConductor].CircType==0)
 					ne[j]=meshnode[n[j]].InConductor+NumNodes;
+		}
+		Mtest[0][0] = Me[0][0];
+		Mtest[0][1] = Me[0][1] + Me[0][2];
+		Mtest[1][0] = Me[1][1];
+		Mtest[1][1] = Me[1][0] + Me[1][2];
+		Mtest[2][0] = Me[2][2];
+		Mtest[2][1] = Me[2][0] + Me[2][1];
+		
+		a = Mtest[0][0] + Mtest[0][1];
+		a += Mtest[1][0] + Mtest[1][1];
+		a += Mtest[2][0] + Mtest[2][1];
+		if (abs(a) < 1e-5)
+		{
+			aa += 1;
+		}
+		else{
+			bb += 1;
 		}
 		for (j=0;j<3;j++){
 			for (k=j;k<3;k++)
